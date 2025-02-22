@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        a{
+         a{
             font-size: 20px;
             color: blue;
         }
@@ -13,10 +13,12 @@
             color:red;
         }
         a:active {
-            color:green
-        }
+            color:green;
+        } 
+    
+
      /* paragraph and title using css */
-        body {
+         body {
             font-family: Arial, sans-serif;
         }
         h1 {
@@ -27,35 +29,96 @@
             font-size: 1.2rem;
             line-height: 1.6;
             text-align: justify;
-        }
+        } 
         /* div and card using css */
         .card {
             border: 1px solid gray;
             padding: 20px;
             margin: 10px;
             max-width: 300px;
+        } 
+        /* nav and div using css */
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+           
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+       /* css  */
+        button {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
 
+        button:hover {
+            background-color: darkblue;
+        }
+        /* css hover */
+        button {
+            width: 150px;
+            height: 50px;
+            font-size: 16px;
+            border: none;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        button:hover {
+            transform: scale(1.2);
+        }
     </style>
 </head>
 
 <body>
-    <ul>
+     <ul>
         <div class="a"></div>
         <li><a href="">Home</a></li>
         <li><a href="">Description</a></li>
         <li><a href="">Topics</a></li>
         <li><a href="">Summary</a></li>
         <li><a href="">Contact</a></li>
-    </ul>
-
-    <!-- paragraph of text  using css-->
+    </ul> 
+    <br>
+     <!-- paragraph of text  using css --> 
      <h1>Web page</h1>
      <p>This is a basic webpage created using HTML and styled with CSS. The text is aligned properly, and styles have been applied to enhance readability.</p>
-
+     <br>
      <!-- div using card  -->
      <div class="card">
         This is a simple card with a border, padding, and margin.
     </div>
+    <br>
+
+    <!-- navigation bar with three linksusing css -->
+           <nav>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+           </nav>
+           <br>
+          <!-- Create a button that changes color when hovered over. -->
+          <button>Click Me</button>
+          <br><br>
+          <!--  Create a button that scales when hovered over. -->
+
+          <button>Hover Me</button>
+          <br><br>
 </body>
 </html>
