@@ -83,6 +83,30 @@
         button:hover {
             transform: scale(1.2);
         }
+        /* css using two boxes */
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .box1, .box2 {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+        }
+        .box1 {
+            background-color: blue;
+        }
+        .box2 {
+            background-color: red;
+            top: 10px;
+            left: 10px;
+            z-index: 1;
+        }
     </style>
 </head>
 
@@ -120,5 +144,9 @@
 
           <button>Hover Me</button>
           <br><br>
+
+          <!-- Create an overlapping layout with two boxes -->
+          <div class="box1"></div>
+          <div class="box2"></div>
 </body>
 </html>
